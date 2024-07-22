@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body class="interest-calculator">
+    <div class="glossy-box">
+        <div class="calculator">
+            <h1 class="title" style="color: white;">Interest Calculator</h1>
+            <input type="number" id="principal" placeholder="Principal Amount (₹)" class="calculator-screen small-input" />
+            <input type="number" id="rate" placeholder="Rate of Interest (₹) " class="calculator-screen small-input" />
+            
+            <div class="date-input-container">
+                <label for="start-date" class="date-label">Start Date:</label>
+                <input type="date" id="start-date" class="small-input date-input" />
+            </div>
+            
+            <div class="date-input-container">
+                <label for="end-date" class="date-label">End Date:</label>
+                <input type="date" id="end-date" class="small-input date-input" />
+            </div>
+            <br>
+            <button type="button" id="calculate" class="equal-sign operator">Calculate</button>
+            <br>
+            <br>
+            <button type="button" id="reset" class="equal-sign operator">Reset</button>
+            <input type="text" id="result" class="calculator-screen small-input" placeholder="Interest (₹)" disabled />
+            
+            <div class="interest-details">
+                <div class="detail" id="duration"></div>
+                <div class="detail" id="principal-amount"></div>
+                <div class="detail" id="rate-of-interest"></div>
+                <div class="detail" id="total-amount"></div>
+            </div>
+
+            <a href="index.html" id="next_page" class="link-button">Back to Calculator</a>
+        </div>
+    </div>
+    <script src="interest_calculator.js"></script>
+</body>
+</html>
